@@ -1,0 +1,20 @@
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  name: frontend
+  namespace: default
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: frontend
+          servicePort: 80
+        path: /guestbook
+      - backend:
+          serviceName: frontend
+          servicePort: 80
+        path: /?(.*)js?(.*)
