@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: busybox-2
+  namespace: default
+  labels:
+    app: busybox-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: busybox-2
+  template:
+    metadata:
+      labels:
+        app: busybox-2
+    spec:
+      serviceAccountName: user-1
+      containers:
+        - name: busybox-2
+          command: ["/bin/sh"]
+          imagePullPolicy: Always
+          args: ["-c", "while true; do echo hello; sleep 10;done"]
+          image: lukaszbielinski/ubuntu
