@@ -1,14 +1,6 @@
 Kubernetes Workshop
 ===================
 
-* [ ] Interview
-  * k8s
-  * containers
-  * clouds
-  * web apps
-  * networking
-  * ops
-  * PaaS/IaaS
 * [ ] Intro
   * What is Kubernetes
   * Architecture diagram
@@ -26,7 +18,6 @@ Kubernetes Workshop
 * [ ] Jobs - migrations
 * [ ] Volumes, PV, PVC
 * [ ] ConfigMaps, Secrets - create
-* [ ] CRD
 * [ ] Helm
 * [ ] Pods lifecycle (phases), probes
 * [ ] Troubleshooting - events, logs, metrics
