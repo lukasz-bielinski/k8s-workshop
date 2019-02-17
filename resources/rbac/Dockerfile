@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update -y && \
     apt-get upgrade -y && \
-    apt-get install -y apt-transport-https curl gnupg2 && \
+    apt-get install -y apt-transport-https curl tar gnupg2 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists
 
