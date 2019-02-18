@@ -13,7 +13,6 @@ spec:
       port: 80
       targetPort: 80
   clusterIP: None
-  type: ClusterIP
 ---
 apiVersion: apps/v1
 kind: StatefulSet
